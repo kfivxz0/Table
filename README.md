@@ -13,27 +13,38 @@
 
 ## 주요 기능
 
-![스크린샷 2022-06-09 오후 1 59 22](https://user-images.githubusercontent.com/106981296/173361450-10958bb4-fe01-492f-a72b-7a53dc2d7e6a.png)
+* 목록 추가하기  
 
+![스크린샷 2022-06-09 오후 1 59 22](https://user-images.githubusercontent.com/106981296/173361450-10958bb4-fe01-492f-a72b-7a53dc2d7e6a.png)   
+
+![스크린샷 2022-06-09 오후 1 59 29](https://user-images.githubusercontent.com/106981296/173362390-2129b93e-3867-4628-b82f-1d829d972f8d.png)     
+
+
+
+* 목록 삭제하기  
+ 
+![스크린샷 2022-06-09 오후 1 59 36](https://user-images.githubusercontent.com/106981296/173362546-18df28da-e0bc-4124-b89b-7bf5e1d3d8ac.png)  
+
+![스크린샷 2022-06-09 오후 1 59 03](https://user-images.githubusercontent.com/106981296/173362576-dc154c19-48ab-4de2-8d63-b404fd12f35a.png)  
 
 ---------------------------------------------------------------------------
 
 ## 전체 소스
-* TableViewController.swift
-![스크린샷 2022-06-09 오후 2 00 29](https://user-images.githubusercontent.com/106981296/173361161-8b9c8f6e-cca3-4516-b1a0-646cf30dd4bc.png)
-![스크린샷 2022-06-09 오후 2 00 46](https://user-images.githubusercontent.com/106981296/173361181-1d4adfd9-acdb-463f-845e-196f4b8c4f16.png)
-![스크린샷 2022-06-09 오후 2 00 57](https://user-images.githubusercontent.com/106981296/173361202-eea6c216-1402-4af1-8ce4-3e80b793b4f3.png)
+* TableViewController.swift  
+![스크린샷 2022-06-09 오후 2 00 29](https://user-images.githubusercontent.com/106981296/173361161-8b9c8f6e-cca3-4516-b1a0-646cf30dd4bc.png)  
+![스크린샷 2022-06-09 오후 2 00 46](https://user-images.githubusercontent.com/106981296/173361181-1d4adfd9-acdb-463f-845e-196f4b8c4f16.png)  
+![스크린샷 2022-06-09 오후 2 00 57](https://user-images.githubusercontent.com/106981296/173361202-eea6c216-1402-4af1-8ce4-3e80b793b4f3.png)  
 
 
 
 * AddViewController.swift
-![스크린샷 2022-06-09 오후 2 01 15](https://user-images.githubusercontent.com/106981296/173361044-56ce5c9b-0e3a-4190-b5ce-d66f8f388afd.png)
+![스크린샷 2022-06-09 오후 2 01 15](https://user-images.githubusercontent.com/106981296/173361044-56ce5c9b-0e3a-4190-b5ce-d66f8f388afd.png)  
 
 
 
 
 * DetailViewController.swift
-![스크린샷 2022-06-09 오후 2 01 47](https://user-images.githubusercontent.com/106981296/173360790-a2e0292d-e87b-460c-ab24-54b5e3933cf3.png)
+![스크린샷 2022-06-09 오후 2 01 47](https://user-images.githubusercontent.com/106981296/173360790-a2e0292d-e87b-460c-ab24-54b5e3933cf3.png)  
 
 
 
