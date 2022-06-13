@@ -56,7 +56,6 @@
 * TableViewController.swift
 
 ```SWIFT
-
 //이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
 var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]
 var itemsImageFile = [ "cart.png", "clock.png", pencil.png] 
@@ -107,3 +106,4 @@ _ = navigationcontroller?.popViewController(animated: true)
 //추가된 내용을 목록으로 불러들입니다.
 override func ViewWillAppear(_ animated: Bool) {
     tvListView.reloadData()
+```
