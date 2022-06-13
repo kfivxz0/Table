@@ -106,4 +106,18 @@ _ = navigationcontroller?.popViewController(animated: true)
 //추가된 내용을 목록으로 불러들입니다.
 override func ViewWillAppear(_ animated: Bool) {
     tvListView.reloadData()
-```
+```  
+
+* DetailViewController.swift
+```SWIFT
+//Main View에서 받을 텍스트를 위해 변수 receiveItem을 선언합니다.
+var receiveItem = ""
+
+//뷰가 노출될 때마다 이 내용을 레이블의 텍스트로 표시합니다.
+lblItem.text = receiveItem
+
+//Main View에서 변수를 받기 위한 함수를 추가합니다.
+func receiveItem(_ item: String)
+{
+    receiveItem = item
+}
