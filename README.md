@@ -57,14 +57,22 @@
 
 ```SWIFT
 
-// 이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
+//이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
 var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]
-var itemsImageFile = [ "cart.png", "clock.png", pencil.png]  
+var itemsImageFile = [ "cart.png", "clock.png", pencil.png] 
 
-
-// 셀의 텍스트 레이블에 items을 대입 ( "책 구매", "철수와 약속", "스터디 준비하기" )
+//셀의 텍스트 레이블에 items을 대입하기( "책 구매", "철수와 약속", "스터디 준비하기" )
 cell.textLable?.text = items[(indexPath as NSIndexPath).row]
 
-
-//셀의 이미지 뷰에 itemsImageFile을 대입( "cart.png", "clock.png", "pencil.png") 
+//셀의 이미지 뷰에 itemsImageFile을 대입하기( "cart.png", "clock.png", "pencil.png")
 cell.imageView?.image = UIImage(named: itemsImageFile[(indexPath as NSIndexPath).row])
+
+//선택한 셀을 삭제하기
+items.remove(at: (indexPath as NSIndexPath).row)
+itemsImageFile.remove(at: (indexPath as NSIndexPath).row)
+
+//바 버튼으로 목록 삭제 동작 코딩하기( 오른쪽 화면에 [Add]버튼 왼쪽 화면에 [edit]버튼 ) 
+self.navigationItem.rightBarButtonItem = self.editButtonItem
+self.navigationItem.leftBarButtonItem = self.editButtonItem
+
+//목록 순서 바꾸기 동작 코딩하기
