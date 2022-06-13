@@ -27,6 +27,8 @@
 
 ![스크린샷 2022-06-09 오후 1 59 03](https://user-images.githubusercontent.com/106981296/173362576-dc154c19-48ab-4de2-8d63-b404fd12f35a.png)  
 
+
+* 목록 순서 바꾸기
 ---------------------------------------------------------------------------
 
 ## 전체 소스
@@ -49,12 +51,20 @@
 
 ---------------------------------------------------------------------------------------------------------------------
 
-## 코드 해석 
+## 주요 코드 해석 
 
 * TableViewController.swift
 
 ```SWIFT
+
 // 이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
 var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]
-var itemsImageFile = [ "cart.png", "clock.png", pencil.png]
+var itemsImageFile = [ "cart.png", "clock.png", pencil.png]  
 
+
+// 셀의 텍스트 레이블에 items을 대입 ( "책 구매", "철수와 약속", "스터디 준비하기" )
+cell.textLable?.text = items[(indexPath as NSIndexPath).row]
+
+
+//셀의 이미지 뷰에 itemsImageFile을 대입( "cart.png", "clock.png", "pencil.png") 
+cell.imageView?.image = UIImage(named: itemsImageFile[(indexPath as NSIndexPath).row])
