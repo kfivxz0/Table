@@ -7,7 +7,7 @@
 
 ## 완성된 모습
 
-![스크린샷 2022-06-09 오후 1 58 39](https://user-images.githubusercontent.com/106981296/173359479-45c7f48f-f02d-4ef1-873a-cdb1fd0bf02f.png)
+  ![스크린샷 2022-06-09 오후 1 58 39](https://user-images.githubusercontent.com/106981296/173359479-45c7f48f-f02d-4ef1-873a-cdb1fd0bf02f.png)
 
 ---------------------------------------------------------------------------
 
@@ -47,6 +47,14 @@
 ![스크린샷 2022-06-09 오후 2 01 47](https://user-images.githubusercontent.com/106981296/173360790-a2e0292d-e87b-460c-ab24-54b5e3933cf3.png)  
 
 
+---------------------------------------------------------------------------------------------------------------------
 
+## 코드 해석 
 
+* TableViewController.swift
+
+```SWIFT
+// 이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
+var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]
+var itemsImageFile = [ "cart.png", "clock.png", pencil.png]
 
