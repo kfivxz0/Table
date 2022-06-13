@@ -57,7 +57,7 @@
 
 ```SWIFT
 //이미지 파일을 외부변수인 'items'와 'ItemsImageFile'로 선언해 모든 클래스에서 이미지를 사용할 수 있습니다.
-var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]
+var items = [ "책 구매", 철수와 약속", "스터디 준비하기"]   
 var itemsImageFile = [ "cart.png", "clock.png", pencil.png] 
 
 //셀의 텍스트 레이블에 items을 대입하기( "책 구매", "철수와 약속", "스터디 준비하기" )
