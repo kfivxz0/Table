@@ -85,4 +85,25 @@ let itemImageToMove = itemsImageFile[(fromindexPath as NSIndexPath).row]
 items.remove(at: (fromindexPath as NSIndexPath).row)
 
 //삭제된 아이템을 이동할 위치로 삽입. 삽입한 아이템 뒤의 아이템들의 인덱스가 재정렬
-items.insert(itemToMove, at: (to as NSIndexPath).row)
+items.insert(itemToMove, at: (to as NSIndexPath).row)   
+```
+
+
+* AddViewController.swift
+
+```SWIFT
+//items에 텍스트 필드의 텍스트 값을 추가
+items.append(tfAddItem.text!)
+
+//itemsImageFile에는 무조건 'clock.png' 파일을 추가
+itemsImageFile.append("clock.png")
+
+//텍스트 필드의 내용을 지운다.
+tfAddItem.text=""
+
+//루트 뷰 컨트롤러, 즉 테이블 뷰로 돌아갑니다.
+_ = navigationcontroller?.popViewController(animated: true)
+
+//추가된 내용을 목록으로 불러들입니다.
+override func ViewWillAppear(_ animated: Bool) {
+    tvListView.reloadData()
