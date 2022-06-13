@@ -75,4 +75,14 @@ itemsImageFile.remove(at: (indexPath as NSIndexPath).row)
 self.navigationItem.rightBarButtonItem = self.editButtonItem
 self.navigationItem.leftBarButtonItem = self.editButtonItem
 
-//목록 순서 바꾸기 동작 코딩하기
+//이동할 아이템의 위치를 itemToMove에 저장하기
+let itemToMove = items[(fromIndexPath as NSIndexPath).row]
+
+//이동할 아이템의 이미지를 itemImageToMove에 저장하기
+let itemImageToMove = itemsImageFile[(fromindexPath as NSIndexPath).row]
+
+//삭제한 아이템 뒤의 아이템들의 인덱스 재정렬
+items.remove(at: (fromindexPath as NSIndexPath).row)
+
+//삭제된 아이템을 이동할 위치로 삽입. 삽입한 아이템 뒤의 아이템들의 인덱스가 재정렬
+items.insert(itemToMove, at: (to as NSIndexPath).row)
