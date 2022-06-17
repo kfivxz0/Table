@@ -102,7 +102,7 @@ items.append(tfAddItem.text!)
 itemsImageFile.append("clock.png")
 ```
 
-~~~SWIFT
+```SWIFT
 //텍스트 필드의 내용을 삭제한다.
 tfAddItem.text=""
 
